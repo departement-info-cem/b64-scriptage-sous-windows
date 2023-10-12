@@ -15,20 +15,27 @@ Pour réaliser ce laboratoire, vous devez minimalement disposer d'un domaine Act
 Voici les étapes recommandées (mais si vous avez déjà un environnement AD fonctionnel, vous pouvez l'utiliser):
 
 1. Montez une passerelle pfSense. Vous pouvez utiliser le modèle `MODELE_pfSense (Sans DHCP)`, il est déjà configuré. Connectez **sa deuxième interface** sur l'un de vos VLAN privés et démarrez-le.
+
 2. Montez un serveur Windows Server dans Labinfo pour agir en tant que contrôleur de domaine. Vous pouvez utiliser le modèle `MODELE_WindowsServer2022_Datacenter_x64_FR`
     - Connectez son interface à la même que la passerelle pfSense.
     - Modifiez le nom d'hôte du serveur [[Tutoriel]](https://info.cegepmontpetit.ca/b64-scriptage-sous-windows/tutoriels/ad-creation-foret#%C3%A9tape-1-changement-du-nom-dh%C3%B4te)
     - Configurez le réseau [[Tutoriel]](https://info.cegepmontpetit.ca/b64-scriptage-sous-windows/tutoriels/ad-creation-foret#%C3%A9tape-2-configuration-du-r%C3%A9seau)
     - Faites la promotion du contrôleur de domaine [[Tutoriel]](https://info.cegepmontpetit.ca/b64-scriptage-sous-windows/tutoriels/ad-creation-foret#%C3%A9tape-3-promotion-du-contr%C3%B4leur-de-domaine)
+
 3. Installez le service DHCP sur le contrôleur de domaine [[Tutoriel]](https://info.cegepmontpetit.ca/b64-scriptage-sous-windows/tutoriels/installation-dhcp#%C3%A9tape-2-installation-du-r%C3%B4le-de-serveur-dhcp)
+
 4. Créez une zone de recherche inverse sur le DNS [[Tutoriel]](https://info.cegepmontpetit.ca/b64-scriptage-sous-windows/tutoriels/dns-zone-recherche-inverse)
+
 5. Joignez votre machine sur laquelle vous avez installé VS Code au domaine [[Tutoriel]](https://info.cegepmontpetit.ca/b64-scriptage-sous-windows/tutoriels/ad-jonction-domaine)
+
 6. Installez les outils RSAT sur votre machine de développement [[Tutoriel]](https://info.cegepmontpetit.ca/b64-scriptage-sous-windows/cours/05#outils-rsat)
+
 7. Si ce n'est pas déjà fait, installez l'outil Git sur votre machine de développement [[Lien]](https://git-scm.com/download/win)
 
-Puis créez une unité d'organisation appelée "**Utilisateurs**" à la racine du domaine. [[Tutoriel]](https://info.cegepmontpetit.ca/b64-scriptage-sous-windows/cours/05#cr%C3%A9ation-dune-unit%C3%A9-dorganisation)
 
-![Unité d'organisation](./assets/tp1/unite_organisation.png)
+8. Puis créez une unité d'organisation appelée "**Utilisateurs**" à la racine du domaine. [[Tutoriel]](https://info.cegepmontpetit.ca/b64-scriptage-sous-windows/cours/05#cr%C3%A9ation-dune-unit%C3%A9-dorganisation)
+
+    ![Unité d'organisation](./assets/tp1/unite_organisation.png)
 
 
 ## Mandat
