@@ -72,7 +72,7 @@ Votre script devra créer un compte sur Active Directory pour chaque utilisateur
 
 - L'utilisateur **doit changer son mot de passe** à la prochaine ouverture de session.
 
-- Si l’utilisateur doit être **admin**, il doit être ajouté au groupe des **administrateurs** du système, sinon il doit être dans le groupe des **utilisateurs réguliers**.
+- Si l’utilisateur doit être **admin**, il doit être ajouté au groupe des **Admins du domaine**.
 
 Si on devait créer les utilisateurs manuellement, voici à quoi ils ressembleraient dans l'interface graphique:
 
@@ -111,7 +111,11 @@ Chaque ligne doit être horodatée (timestamp) dans le format illustré, avec un
 
 ![Exemple de fichier log](./assets/tp1/fichier_log.png)
  
-## BONUS: Traitement des conflits de noms
+
+
+:::info BONUS! (10%)
+
+### Gestion des conflits de nom
 
 Lors du traitement des utilisateurs, il se peut qu’il y ait plusieurs utilisateurs qui portent des noms semblables, qui auraient des noms d’utilisateurs identiques. Programmez la logique nécessaire dans votre script pour que si un nom d’utilisateur doit être identique à un existant, il doit être suivi d’un 1, puis d'un 2, puis d’un 3, et ainsi de suite, comme illustré ci-dessous.
 
@@ -119,6 +123,7 @@ Lors du traitement des utilisateurs, il se peut qu’il y ait plusieurs utilisat
 
 Une implémentation de cette fonctionnalité pourrait vous valoir 10% en points bonis!
 
+:::
 
 ## Consignes de remise
 
@@ -129,7 +134,6 @@ Vous devez remettre ce travail sur GitHub. Vous êtes libres d’utiliser le cli
 Voici quelques conseils qui pourraient vous aider à mener à bien ce travail :
 - Avant de commencer à coder, décrivez les étapes en pseudo-code pour déterminer la logique générale du script. Vous pourrez ensuite &laquo;&nbsp;traduire&nbsp;&raquo; ce pseudo-code en PowerShell, étape par étape.
 - Utilisez une machine virtuelle pour tester votre script. Vous pouvez installer VS Code sur votre VM pour développer votre script.
-- Lancez VS Code en tant qu’administrateur pour pouvoir tester votre script directement dans Code.
 - Utilisez le paramètre `-WhatIf` pour tester votre script sans qu’une action réelle ne soit posée.
 - Faites-vous un petit script de nettoyage pour effacer les utilisateurs créés en trop.
 - Utilisez GitHub à votre avantage. Dès que vous avez réussi quelque chose dans votre script, faites un commit et un push dans GitHub. Vous pourrez ainsi profiter de l’historique.
