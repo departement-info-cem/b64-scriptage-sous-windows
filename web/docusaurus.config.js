@@ -26,6 +26,11 @@ const config = {
     locales: ["fr"],
   },
 
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
+
   presets: [
     [
       "classic",
@@ -62,6 +67,12 @@ const config = {
             docId: "cours/r01",
             position: "left",
             label: "Cours",
+          },
+          {
+            type: "docSidebar",
+            position: "left",
+            sidebarId: "tutoriels",
+            label: "Tutoriels",
           },
           {
             type: "docSidebar",
