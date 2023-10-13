@@ -47,7 +47,7 @@ Vous devez développer un script PowerShell qui vise à créer des utilisateurs 
 Le fichier CSV est construit dans le format suivant, séparé par des **points-virgules** :
 
 ```
-"Prenom";"Nom";"Poste";"NoEmpl";"Admin"
+"Prenom";"Nom";"NoEmpl";"Admin"
 "Alice";"Robert";"10001";"Non"
 "Bob";"Graton";"10002";"Non"
 "Caroline";"Tremblay";"10003";"Oui"
