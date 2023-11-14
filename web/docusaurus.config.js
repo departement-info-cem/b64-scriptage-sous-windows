@@ -20,10 +20,10 @@ const config = {
   projectName: siteConfig.nomUrl,
   deploymentBranch: "gh-pages",
   trailingSlash: false,
-
+  
   i18n: {
-    defaultLocale: "fr",
-    locales: ["fr"],
+    defaultLocale: "fr-ca",
+    locales: ["fr-ca"],
   },
 
   markdown: {
@@ -39,6 +39,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           routeBasePath: "/",
+          showLastUpdateTime: true,
         },
         theme: {
           customCss: [require.resolve("./src/css/custom.css")],
